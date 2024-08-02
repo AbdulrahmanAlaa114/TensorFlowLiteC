@@ -1,6 +1,7 @@
 name: Build Latest TensorFlowLiteC Version
 
 on:
+  workflow_dispatch:  # This enables manual triggering
   schedule:
     - cron: '*/60 */24 * * *' # Every 24 hours
   push:
